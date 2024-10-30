@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Lab3.srcs/sources_1/new/shift64.vhd" \
+"../../../../Lab3.srcs/sources_1/new/shift32.vhd" \
+"../../../../Lab3.srcs/sources_1/new/adder64.vhd" \
+"../../../../Lab3.srcs/sources_1/new/control_unit.vhd" \
+"../../../../Lab3.srcs/sources_1/new/Multi_Unit.vhd" \
+"../../../../Lab3.srcs/sources_1/imports/new/adder1.vhd" \
+"../../../../Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd" \
+"../../../../Lab3.srcs/sources_1/new/mux.vhd" \
+"../../../../Lab3.srcs/sim_1/new/multi_tb.vhd" \
+
+# Do not sort compile order
+nosort

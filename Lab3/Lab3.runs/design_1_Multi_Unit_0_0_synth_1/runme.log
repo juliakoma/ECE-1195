@@ -1,0 +1,614 @@
+
+*** Running vivado
+    with args -log design_1_Multi_Unit_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_Multi_Unit_0_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_Multi_Unit_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/julia/Documents/1195/Lab_1/Lab_1_repo/ip_repo/axi_regmap'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top design_1_Multi_Unit_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22120 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 468.418 ; gain = 103.895
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_Multi_Unit_0_0' [c:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/bd/design_1/ip/design_1_Multi_Unit_0_0/synth/design_1_Multi_Unit_0_0.vhd:67]
+INFO: [Synth 8-3491] module 'Multi_Unit' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/Multi_Unit.vhd:5' bound to instance 'U0' of component 'Multi_Unit' [c:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/bd/design_1/ip/design_1_Multi_Unit_0_0/synth/design_1_Multi_Unit_0_0.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'Multi_Unit' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/Multi_Unit.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'shift64' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:19]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'flipflop' (1#1) [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:19]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/Lab3/flipflop.vhd:5' bound to instance 'flipflop_inst' of component 'flipflop' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:51]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst_msb' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'mux' (2#1) [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:14]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/mux.vhd:5' bound to instance 'mux_inst' of component 'mux' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:71]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'shift64' (3#1) [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift64.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'shift32' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift32.vhd:19]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shift32' (4#1) [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/shift32.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'adder64' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/adder64.vhd:18]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'adder1' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/new/adder1.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'adder1' (5#1) [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/imports/new/adder1.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'adder64' (6#1) [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/adder64.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/control_unit.vhd:24]
+INFO: [Synth 8-226] default block is never used [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/control_unit.vhd:55]
+WARNING: [Synth 8-614] signal 'counter' is read in the process but is not in the sensitivity list [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/control_unit.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (7#1) [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/control_unit.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'Multi_Unit' (8#1) [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/Multi_Unit.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'design_1_Multi_Unit_0_0' (9#1) [c:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/bd/design_1/ip/design_1_Multi_Unit_0_0/synth/design_1_Multi_Unit_0_0.vhd:67]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 525.340 ; gain = 160.816
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 525.340 ; gain = 160.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 525.340 ; gain = 160.816
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 874.742 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 874.742 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 876.898 ; gain = 2.156
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 876.898 ; gain = 512.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 876.898 ; gain = 512.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 876.898 ; gain = 512.375
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control_unit'
+INFO: [Synth 8-5544] ROM "multiplicand" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "done_sig" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "shifter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    load |                               00 |                               00
+                     add |                               01 |                               01
+                   shift |                               10 |                               10
+                    done |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'control_unit'
+WARNING: [Synth 8-327] inferring latch for variable 'counter_reg' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/control_unit.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'prod_reg' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/control_unit.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'shifter_reg' [C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sources_1/new/control_unit.vhd:52]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 876.898 ; gain = 512.375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 192   
++---Registers : 
+	                1 Bit    Registers := 160   
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 160   
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module adder1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module adder64 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 64    
+Module control_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "U0/control_unit_inst/next_state" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 876.898 ; gain = 512.375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:33 . Memory (MB): peak = 877.785 ; gain = 513.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:33 . Memory (MB): peak = 878.086 ; gain = 513.562
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:33 . Memory (MB): peak = 889.008 ; gain = 524.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 889.008 ; gain = 524.484
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 889.008 ; gain = 524.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 889.008 ; gain = 524.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 889.008 ; gain = 524.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 889.008 ; gain = 524.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 889.008 ; gain = 524.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |    60|
+|3     |LUT3 |    92|
+|4     |LUT4 |     3|
+|5     |LUT5 |    83|
+|6     |LUT6 |    26|
+|7     |FDCE |   160|
+|8     |FDRE |     2|
+|9     |LD   |     8|
++------+-----+------+
+
+Report Instance Areas: 
++------+-------------------------------------------+-------------+------+
+|      |Instance                                   |Module       |Cells |
++------+-------------------------------------------+-------------+------+
+|1     |top                                        |             |   436|
+|2     |  U0                                       |Multi_Unit   |   436|
+|3     |    control_unit_inst                      |control_unit |    59|
+|4     |    multiplicand                           |shift64      |   237|
+|5     |      \FF_instantiation[0].flipflop_inst   |flipflop_96  |    12|
+|6     |      \FF_instantiation[10].flipflop_inst  |flipflop_97  |     3|
+|7     |      \FF_instantiation[11].flipflop_inst  |flipflop_98  |     3|
+|8     |      \FF_instantiation[12].flipflop_inst  |flipflop_99  |     3|
+|9     |      \FF_instantiation[13].flipflop_inst  |flipflop_100 |     2|
+|10    |      \FF_instantiation[14].flipflop_inst  |flipflop_101 |    11|
+|11    |      \FF_instantiation[15].flipflop_inst  |flipflop_102 |     3|
+|12    |      \FF_instantiation[16].flipflop_inst  |flipflop_103 |     3|
+|13    |      \FF_instantiation[17].flipflop_inst  |flipflop_104 |     3|
+|14    |      \FF_instantiation[18].flipflop_inst  |flipflop_105 |     2|
+|15    |      \FF_instantiation[19].flipflop_inst  |flipflop_106 |    11|
+|16    |      \FF_instantiation[1].flipflop_inst   |flipflop_107 |     3|
+|17    |      \FF_instantiation[20].flipflop_inst  |flipflop_108 |     3|
+|18    |      \FF_instantiation[21].flipflop_inst  |flipflop_109 |     3|
+|19    |      \FF_instantiation[22].flipflop_inst  |flipflop_110 |     3|
+|20    |      \FF_instantiation[23].flipflop_inst  |flipflop_111 |     2|
+|21    |      \FF_instantiation[24].flipflop_inst  |flipflop_112 |    11|
+|22    |      \FF_instantiation[25].flipflop_inst  |flipflop_113 |     3|
+|23    |      \FF_instantiation[26].flipflop_inst  |flipflop_114 |     3|
+|24    |      \FF_instantiation[27].flipflop_inst  |flipflop_115 |     3|
+|25    |      \FF_instantiation[28].flipflop_inst  |flipflop_116 |     2|
+|26    |      \FF_instantiation[29].flipflop_inst  |flipflop_117 |    11|
+|27    |      \FF_instantiation[2].flipflop_inst   |flipflop_118 |     2|
+|28    |      \FF_instantiation[30].flipflop_inst  |flipflop_119 |     3|
+|29    |      \FF_instantiation[31].flipflop_inst  |flipflop_120 |     2|
+|30    |      \FF_instantiation[32].flipflop_inst  |flipflop_121 |     2|
+|31    |      \FF_instantiation[33].flipflop_inst  |flipflop_122 |     1|
+|32    |      \FF_instantiation[34].flipflop_inst  |flipflop_123 |    10|
+|33    |      \FF_instantiation[35].flipflop_inst  |flipflop_124 |     2|
+|34    |      \FF_instantiation[36].flipflop_inst  |flipflop_125 |     2|
+|35    |      \FF_instantiation[37].flipflop_inst  |flipflop_126 |     2|
+|36    |      \FF_instantiation[38].flipflop_inst  |flipflop_127 |     1|
+|37    |      \FF_instantiation[39].flipflop_inst  |flipflop_128 |    10|
+|38    |      \FF_instantiation[3].flipflop_inst   |flipflop_129 |     3|
+|39    |      \FF_instantiation[40].flipflop_inst  |flipflop_130 |     2|
+|40    |      \FF_instantiation[41].flipflop_inst  |flipflop_131 |     2|
+|41    |      \FF_instantiation[42].flipflop_inst  |flipflop_132 |     2|
+|42    |      \FF_instantiation[43].flipflop_inst  |flipflop_133 |     1|
+|43    |      \FF_instantiation[44].flipflop_inst  |flipflop_134 |    10|
+|44    |      \FF_instantiation[45].flipflop_inst  |flipflop_135 |     2|
+|45    |      \FF_instantiation[46].flipflop_inst  |flipflop_136 |     2|
+|46    |      \FF_instantiation[47].flipflop_inst  |flipflop_137 |     2|
+|47    |      \FF_instantiation[48].flipflop_inst  |flipflop_138 |     1|
+|48    |      \FF_instantiation[49].flipflop_inst  |flipflop_139 |    10|
+|49    |      \FF_instantiation[4].flipflop_inst   |flipflop_140 |    10|
+|50    |      \FF_instantiation[50].flipflop_inst  |flipflop_141 |     2|
+|51    |      \FF_instantiation[51].flipflop_inst  |flipflop_142 |     2|
+|52    |      \FF_instantiation[52].flipflop_inst  |flipflop_143 |     2|
+|53    |      \FF_instantiation[53].flipflop_inst  |flipflop_144 |     1|
+|54    |      \FF_instantiation[54].flipflop_inst  |flipflop_145 |     6|
+|55    |      \FF_instantiation[55].flipflop_inst  |flipflop_146 |     2|
+|56    |      \FF_instantiation[56].flipflop_inst  |flipflop_147 |     2|
+|57    |      \FF_instantiation[57].flipflop_inst  |flipflop_148 |     2|
+|58    |      \FF_instantiation[58].flipflop_inst  |flipflop_149 |     1|
+|59    |      \FF_instantiation[59].flipflop_inst  |flipflop_150 |     2|
+|60    |      \FF_instantiation[5].flipflop_inst   |flipflop_151 |     4|
+|61    |      \FF_instantiation[60].flipflop_inst  |flipflop_152 |     1|
+|62    |      \FF_instantiation[61].flipflop_inst  |flipflop_153 |     2|
+|63    |      \FF_instantiation[62].flipflop_inst  |flipflop_154 |     2|
+|64    |      \FF_instantiation[63].flipflop_inst  |flipflop_155 |     1|
+|65    |      \FF_instantiation[6].flipflop_inst   |flipflop_156 |     2|
+|66    |      \FF_instantiation[7].flipflop_inst   |flipflop_157 |     3|
+|67    |      \FF_instantiation[8].flipflop_inst   |flipflop_158 |     2|
+|68    |      \FF_instantiation[9].flipflop_inst   |flipflop_159 |    11|
+|69    |    multiplier                             |shift32      |    63|
+|70    |      \FF_instantiation[0].flipflop_inst   |flipflop_64  |     1|
+|71    |      \FF_instantiation[10].flipflop_inst  |flipflop_65  |     2|
+|72    |      \FF_instantiation[11].flipflop_inst  |flipflop_66  |     2|
+|73    |      \FF_instantiation[12].flipflop_inst  |flipflop_67  |     2|
+|74    |      \FF_instantiation[13].flipflop_inst  |flipflop_68  |     2|
+|75    |      \FF_instantiation[14].flipflop_inst  |flipflop_69  |     2|
+|76    |      \FF_instantiation[15].flipflop_inst  |flipflop_70  |     2|
+|77    |      \FF_instantiation[16].flipflop_inst  |flipflop_71  |     2|
+|78    |      \FF_instantiation[17].flipflop_inst  |flipflop_72  |     2|
+|79    |      \FF_instantiation[18].flipflop_inst  |flipflop_73  |     2|
+|80    |      \FF_instantiation[19].flipflop_inst  |flipflop_74  |     2|
+|81    |      \FF_instantiation[1].flipflop_inst   |flipflop_75  |     2|
+|82    |      \FF_instantiation[20].flipflop_inst  |flipflop_76  |     2|
+|83    |      \FF_instantiation[21].flipflop_inst  |flipflop_77  |     2|
+|84    |      \FF_instantiation[22].flipflop_inst  |flipflop_78  |     2|
+|85    |      \FF_instantiation[23].flipflop_inst  |flipflop_79  |     2|
+|86    |      \FF_instantiation[24].flipflop_inst  |flipflop_80  |     2|
+|87    |      \FF_instantiation[25].flipflop_inst  |flipflop_81  |     2|
+|88    |      \FF_instantiation[26].flipflop_inst  |flipflop_82  |     2|
+|89    |      \FF_instantiation[27].flipflop_inst  |flipflop_83  |     2|
+|90    |      \FF_instantiation[28].flipflop_inst  |flipflop_84  |     2|
+|91    |      \FF_instantiation[29].flipflop_inst  |flipflop_85  |     2|
+|92    |      \FF_instantiation[2].flipflop_inst   |flipflop_86  |     2|
+|93    |      \FF_instantiation[30].flipflop_inst  |flipflop_87  |     2|
+|94    |      \FF_instantiation[31].flipflop_inst  |flipflop_88  |     2|
+|95    |      \FF_instantiation[3].flipflop_inst   |flipflop_89  |     2|
+|96    |      \FF_instantiation[4].flipflop_inst   |flipflop_90  |     2|
+|97    |      \FF_instantiation[5].flipflop_inst   |flipflop_91  |     2|
+|98    |      \FF_instantiation[6].flipflop_inst   |flipflop_92  |     2|
+|99    |      \FF_instantiation[7].flipflop_inst   |flipflop_93  |     2|
+|100   |      \FF_instantiation[8].flipflop_inst   |flipflop_94  |     2|
+|101   |      \FF_instantiation[9].flipflop_inst   |flipflop_95  |     2|
+|102   |    product_reg                            |shift64_0    |    77|
+|103   |      \FF_instantiation[0].flipflop_inst   |flipflop     |     3|
+|104   |      \FF_instantiation[10].flipflop_inst  |flipflop_1   |     2|
+|105   |      \FF_instantiation[11].flipflop_inst  |flipflop_2   |     1|
+|106   |      \FF_instantiation[12].flipflop_inst  |flipflop_3   |     1|
+|107   |      \FF_instantiation[13].flipflop_inst  |flipflop_4   |     1|
+|108   |      \FF_instantiation[14].flipflop_inst  |flipflop_5   |     1|
+|109   |      \FF_instantiation[15].flipflop_inst  |flipflop_6   |     2|
+|110   |      \FF_instantiation[16].flipflop_inst  |flipflop_7   |     1|
+|111   |      \FF_instantiation[17].flipflop_inst  |flipflop_8   |     1|
+|112   |      \FF_instantiation[18].flipflop_inst  |flipflop_9   |     1|
+|113   |      \FF_instantiation[19].flipflop_inst  |flipflop_10  |     1|
+|114   |      \FF_instantiation[1].flipflop_inst   |flipflop_11  |     1|
+|115   |      \FF_instantiation[20].flipflop_inst  |flipflop_12  |     2|
+|116   |      \FF_instantiation[21].flipflop_inst  |flipflop_13  |     1|
+|117   |      \FF_instantiation[22].flipflop_inst  |flipflop_14  |     1|
+|118   |      \FF_instantiation[23].flipflop_inst  |flipflop_15  |     1|
+|119   |      \FF_instantiation[24].flipflop_inst  |flipflop_16  |     1|
+|120   |      \FF_instantiation[25].flipflop_inst  |flipflop_17  |     2|
+|121   |      \FF_instantiation[26].flipflop_inst  |flipflop_18  |     1|
+|122   |      \FF_instantiation[27].flipflop_inst  |flipflop_19  |     1|
+|123   |      \FF_instantiation[28].flipflop_inst  |flipflop_20  |     1|
+|124   |      \FF_instantiation[29].flipflop_inst  |flipflop_21  |     1|
+|125   |      \FF_instantiation[2].flipflop_inst   |flipflop_22  |     1|
+|126   |      \FF_instantiation[30].flipflop_inst  |flipflop_23  |     2|
+|127   |      \FF_instantiation[31].flipflop_inst  |flipflop_24  |     1|
+|128   |      \FF_instantiation[32].flipflop_inst  |flipflop_25  |     1|
+|129   |      \FF_instantiation[33].flipflop_inst  |flipflop_26  |     1|
+|130   |      \FF_instantiation[34].flipflop_inst  |flipflop_27  |     1|
+|131   |      \FF_instantiation[35].flipflop_inst  |flipflop_28  |     2|
+|132   |      \FF_instantiation[36].flipflop_inst  |flipflop_29  |     1|
+|133   |      \FF_instantiation[37].flipflop_inst  |flipflop_30  |     1|
+|134   |      \FF_instantiation[38].flipflop_inst  |flipflop_31  |     1|
+|135   |      \FF_instantiation[39].flipflop_inst  |flipflop_32  |     1|
+|136   |      \FF_instantiation[3].flipflop_inst   |flipflop_33  |     1|
+|137   |      \FF_instantiation[40].flipflop_inst  |flipflop_34  |     2|
+|138   |      \FF_instantiation[41].flipflop_inst  |flipflop_35  |     1|
+|139   |      \FF_instantiation[42].flipflop_inst  |flipflop_36  |     1|
+|140   |      \FF_instantiation[43].flipflop_inst  |flipflop_37  |     1|
+|141   |      \FF_instantiation[44].flipflop_inst  |flipflop_38  |     1|
+|142   |      \FF_instantiation[45].flipflop_inst  |flipflop_39  |     2|
+|143   |      \FF_instantiation[46].flipflop_inst  |flipflop_40  |     1|
+|144   |      \FF_instantiation[47].flipflop_inst  |flipflop_41  |     1|
+|145   |      \FF_instantiation[48].flipflop_inst  |flipflop_42  |     1|
+|146   |      \FF_instantiation[49].flipflop_inst  |flipflop_43  |     1|
+|147   |      \FF_instantiation[4].flipflop_inst   |flipflop_44  |     1|
+|148   |      \FF_instantiation[50].flipflop_inst  |flipflop_45  |     2|
+|149   |      \FF_instantiation[51].flipflop_inst  |flipflop_46  |     1|
+|150   |      \FF_instantiation[52].flipflop_inst  |flipflop_47  |     1|
+|151   |      \FF_instantiation[53].flipflop_inst  |flipflop_48  |     1|
+|152   |      \FF_instantiation[54].flipflop_inst  |flipflop_49  |     1|
+|153   |      \FF_instantiation[55].flipflop_inst  |flipflop_50  |     2|
+|154   |      \FF_instantiation[56].flipflop_inst  |flipflop_51  |     1|
+|155   |      \FF_instantiation[57].flipflop_inst  |flipflop_52  |     1|
+|156   |      \FF_instantiation[58].flipflop_inst  |flipflop_53  |     1|
+|157   |      \FF_instantiation[59].flipflop_inst  |flipflop_54  |     1|
+|158   |      \FF_instantiation[5].flipflop_inst   |flipflop_55  |     2|
+|159   |      \FF_instantiation[60].flipflop_inst  |flipflop_56  |     1|
+|160   |      \FF_instantiation[61].flipflop_inst  |flipflop_57  |     1|
+|161   |      \FF_instantiation[62].flipflop_inst  |flipflop_58  |     1|
+|162   |      \FF_instantiation[63].flipflop_inst  |flipflop_59  |     1|
+|163   |      \FF_instantiation[6].flipflop_inst   |flipflop_60  |     1|
+|164   |      \FF_instantiation[7].flipflop_inst   |flipflop_61  |     1|
+|165   |      \FF_instantiation[8].flipflop_inst   |flipflop_62  |     1|
+|166   |      \FF_instantiation[9].flipflop_inst   |flipflop_63  |     1|
++------+-------------------------------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 889.008 ; gain = 524.484
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 889.008 ; gain = 172.926
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 889.008 ; gain = 524.484
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 898.727 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  LD => LDCE: 6 instances
+  LD => LDCE (inverted pins: G): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+141 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 898.727 ; gain = 547.535
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 898.727 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/julia/Documents/1195/Lab3/Lab3.runs/design_1_Multi_Unit_0_0_synth_1/design_1_Multi_Unit_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 165 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 898.727 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/julia/Documents/1195/Lab3/Lab3.runs/design_1_Multi_Unit_0_0_synth_1/design_1_Multi_Unit_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_Multi_Unit_0_0_utilization_synth.rpt -pb design_1_Multi_Unit_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 11 12:58:35 2024...

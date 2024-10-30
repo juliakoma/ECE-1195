@@ -1,0 +1,6 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Error: SHIFT state failed
+Time: 110 ns  Iteration: 0  Process: /control_tb/FSM_INIT  File: C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sim_1/new/control_tb.vhd
+Error: DONE state failed
+Time: 450 ns  Iteration: 0  Process: /control_tb/FSM_INIT  File: C:/Users/julia/Documents/1195/Lab3/Lab3.srcs/sim_1/new/control_tb.vhd

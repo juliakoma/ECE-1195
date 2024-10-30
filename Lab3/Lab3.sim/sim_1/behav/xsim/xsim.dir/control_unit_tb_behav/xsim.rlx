@@ -1,0 +1,12 @@
+
+{ 
+    crc :  5821980470554886158  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 7be74e03e8a8430fabaf0a0ff5e64f77 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_4 -L processing_system7_vip_v1_0_6 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L xlslice_v1_0_1 -L generic_baseblocks_v2_1_0 -L fifo_generator_v13_2_3 -L axi_data_fifo_v2_1_17 -L axi_register_slice_v2_1_18 -L axi_protocol_converter_v2_1_18 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot control_unit_tb_behav xil_defaultlib.control_unit_tb xil_defaultlib.glbl" , 
+    buildDate : "Dec  7 2018" , 
+    buildTime : "00:33:28" , 
+    linkCmd : "C:\\Xilinx\\Vivado\\2018.3\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/control_unit_tb_behav/xsimk.exe\"   \"xsim.dir/control_unit_tb_behav/obj/xsim_0.win64.obj\" \"xsim.dir/control_unit_tb_behav/obj/xsim_1.win64.obj\" -L\"C:\\Xilinx\\Vivado\\2018.3\\lib\\win64.o\" -lrdi_simulator_kernel  -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

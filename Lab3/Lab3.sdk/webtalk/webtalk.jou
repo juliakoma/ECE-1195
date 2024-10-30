@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Fri Oct 11 14:08:49 2024
+# Process ID: 15540
+# Current directory: C:/Users/julia/Documents/1195/Lab3/Lab3.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/julia/Documents/1195/Lab3/Lab3.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/julia/Documents/1195/Lab3/Lab3.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

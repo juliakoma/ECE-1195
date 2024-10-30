@@ -1,0 +1,548 @@
+14:03:57 INFO  : Registering command handlers for SDK TCF services
+14:04:04 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\julia\Documents\1195\project_2\project_2.sdk\temp_xsdb_launch_script.tcl
+14:04:06 INFO  : XSCT server has started successfully.
+14:04:06 INFO  : Successfully done setting XSCT server connection channel  
+14:04:06 INFO  : Processing command line option -hwspec C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper.hdf.
+14:04:06 INFO  : Successfully done setting SDK workspace  
+14:22:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:22:45 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017AEE2CFA' is selected.
+14:22:45 INFO  : 'jtag frequency' command is executed.
+14:22:45 INFO  : Sourcing of 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:22:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1' command is executed.
+14:22:47 INFO  : FPGA configured successfully with bitstream "C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:22:47 INFO  : Context for 'APU' is selected.
+14:22:47 INFO  : Hardware design information is loaded from 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+14:22:47 INFO  : 'configparams force-mem-access 1' command is executed.
+14:22:47 INFO  : Context for 'APU' is selected.
+14:22:48 INFO  : 'stop' command is executed.
+14:22:48 INFO  : 'ps7_init' command is executed.
+14:22:48 INFO  : 'ps7_post_config' command is executed.
+14:22:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:22:48 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:22:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:22:48 INFO  : The application 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:22:48 INFO  : 'configparams force-mem-access 0' command is executed.
+14:22:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1
+fpga -file C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+loadhw -hw C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+dow C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:22:48 INFO  : Memory regions updated for context APU
+14:22:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:22:49 INFO  : 'con' command is executed.
+14:22:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+con
+----------------End of Script----------------
+
+14:22:49 INFO  : Launch script is exported to file 'C:\Users\julia\Documents\1195\project_2\project_2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu.elf_on_local.tcl'
+14:28:29 INFO  : Disconnected from the channel tcfchan#1.
+14:28:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:28:31 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017AEE2CFA' is selected.
+14:28:31 INFO  : 'jtag frequency' command is executed.
+14:28:31 INFO  : Sourcing of 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:28:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1' command is executed.
+14:28:33 INFO  : FPGA configured successfully with bitstream "C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:28:33 INFO  : Context for 'APU' is selected.
+14:28:34 INFO  : Hardware design information is loaded from 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+14:28:34 INFO  : 'configparams force-mem-access 1' command is executed.
+14:28:34 INFO  : Context for 'APU' is selected.
+14:28:34 INFO  : 'stop' command is executed.
+14:28:34 INFO  : 'ps7_init' command is executed.
+14:28:34 INFO  : 'ps7_post_config' command is executed.
+14:28:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:28:35 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:28:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:28:35 INFO  : The application 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:28:35 INFO  : 'configparams force-mem-access 0' command is executed.
+14:28:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1
+fpga -file C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+loadhw -hw C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+dow C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:28:35 INFO  : Memory regions updated for context APU
+14:28:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:28:35 INFO  : 'con' command is executed.
+14:28:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+con
+----------------End of Script----------------
+
+14:28:35 INFO  : Launch script is exported to file 'C:\Users\julia\Documents\1195\project_2\project_2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu.elf_on_local.tcl'
+14:28:56 INFO  : Disconnected from the channel tcfchan#2.
+14:28:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:28:57 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017AEE2CFA' is selected.
+14:28:57 INFO  : 'jtag frequency' command is executed.
+14:28:57 INFO  : Sourcing of 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:28:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1' command is executed.
+14:28:59 INFO  : FPGA configured successfully with bitstream "C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:28:59 INFO  : Context for 'APU' is selected.
+14:29:00 INFO  : Hardware design information is loaded from 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+14:29:00 INFO  : 'configparams force-mem-access 1' command is executed.
+14:29:00 INFO  : Context for 'APU' is selected.
+14:29:00 INFO  : 'stop' command is executed.
+14:29:01 INFO  : 'ps7_init' command is executed.
+14:29:01 INFO  : 'ps7_post_config' command is executed.
+14:29:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:29:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:29:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:29:01 INFO  : The application 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:29:01 INFO  : 'configparams force-mem-access 0' command is executed.
+14:29:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1
+fpga -file C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+loadhw -hw C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+dow C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:29:01 INFO  : Memory regions updated for context APU
+14:29:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:29:01 INFO  : 'con' command is executed.
+14:29:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+con
+----------------End of Script----------------
+
+14:29:01 INFO  : Launch script is exported to file 'C:\Users\julia\Documents\1195\project_2\project_2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu.elf_on_local.tcl'
+14:36:40 INFO  : Disconnected from the channel tcfchan#3.
+14:36:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:36:41 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017AEE2CFA' is selected.
+14:36:41 INFO  : 'jtag frequency' command is executed.
+14:36:41 INFO  : Sourcing of 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:36:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1' command is executed.
+14:36:44 INFO  : FPGA configured successfully with bitstream "C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:36:44 INFO  : Context for 'APU' is selected.
+14:36:45 INFO  : Hardware design information is loaded from 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+14:36:45 INFO  : 'configparams force-mem-access 1' command is executed.
+14:36:45 INFO  : Context for 'APU' is selected.
+14:36:45 INFO  : 'stop' command is executed.
+14:36:45 INFO  : 'ps7_init' command is executed.
+14:36:45 INFO  : 'ps7_post_config' command is executed.
+14:36:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:36:45 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:36:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:36:45 INFO  : The application 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:36:45 INFO  : 'configparams force-mem-access 0' command is executed.
+14:36:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1
+fpga -file C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+loadhw -hw C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+dow C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:36:45 INFO  : Memory regions updated for context APU
+14:36:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:36:45 INFO  : 'con' command is executed.
+14:36:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+con
+----------------End of Script----------------
+
+14:36:45 INFO  : Launch script is exported to file 'C:\Users\julia\Documents\1195\project_2\project_2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu.elf_on_local.tcl'
+14:37:23 INFO  : Disconnected from the channel tcfchan#4.
+14:37:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:37:24 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017AEE2CFA' is selected.
+14:37:24 INFO  : 'jtag frequency' command is executed.
+14:37:24 INFO  : Sourcing of 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:37:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1' command is executed.
+14:37:27 INFO  : FPGA configured successfully with bitstream "C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:37:27 INFO  : Context for 'APU' is selected.
+14:37:28 INFO  : Hardware design information is loaded from 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+14:37:28 INFO  : 'configparams force-mem-access 1' command is executed.
+14:37:28 INFO  : Context for 'APU' is selected.
+14:37:28 INFO  : 'stop' command is executed.
+14:37:28 ERROR : Memory read error at 0xF8007080. AHB AP transaction error, DAP status f0000021
+14:37:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1
+fpga -file C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+loadhw -hw C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+14:37:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:37:40 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017AEE2CFA' is selected.
+14:37:40 INFO  : 'jtag frequency' command is executed.
+14:37:40 INFO  : Sourcing of 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:37:40 INFO  : Context for 'APU' is selected.
+14:37:41 INFO  : System reset is completed.
+14:37:44 INFO  : 'after 3000' command is executed.
+14:37:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1' command is executed.
+14:37:46 INFO  : FPGA configured successfully with bitstream "C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:37:46 INFO  : Context for 'APU' is selected.
+14:37:46 INFO  : Hardware design information is loaded from 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+14:37:46 INFO  : 'configparams force-mem-access 1' command is executed.
+14:37:46 INFO  : Context for 'APU' is selected.
+14:37:46 INFO  : 'ps7_init' command is executed.
+14:37:46 INFO  : 'ps7_post_config' command is executed.
+14:37:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:37:47 INFO  : The application 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:37:47 INFO  : 'configparams force-mem-access 0' command is executed.
+14:37:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1
+fpga -file C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+loadhw -hw C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+dow C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:37:47 INFO  : Memory regions updated for context APU
+14:37:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:37:47 INFO  : 'con' command is executed.
+14:37:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+con
+----------------End of Script----------------
+
+14:37:47 INFO  : Launch script is exported to file 'C:\Users\julia\Documents\1195\project_2\project_2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu.elf_on_local.tcl'
+14:42:57 INFO  : Disconnected from the channel tcfchan#5.
+14:42:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:42:58 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017AEE2CFA' is selected.
+14:42:58 INFO  : 'jtag frequency' command is executed.
+14:42:58 INFO  : Sourcing of 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:42:58 INFO  : Context for 'APU' is selected.
+14:42:58 INFO  : System reset is completed.
+14:43:01 INFO  : 'after 3000' command is executed.
+14:43:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1' command is executed.
+14:43:04 INFO  : FPGA configured successfully with bitstream "C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:43:04 INFO  : Context for 'APU' is selected.
+14:43:05 INFO  : Hardware design information is loaded from 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+14:43:05 INFO  : 'configparams force-mem-access 1' command is executed.
+14:43:05 INFO  : Context for 'APU' is selected.
+14:43:05 INFO  : 'ps7_init' command is executed.
+14:43:05 INFO  : 'ps7_post_config' command is executed.
+14:43:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:43:05 INFO  : The application 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:43:05 INFO  : 'configparams force-mem-access 0' command is executed.
+14:43:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1
+fpga -file C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+loadhw -hw C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+dow C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:43:05 INFO  : Memory regions updated for context APU
+14:43:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:43:05 INFO  : 'con' command is executed.
+14:43:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+con
+----------------End of Script----------------
+
+14:43:05 INFO  : Launch script is exported to file 'C:\Users\julia\Documents\1195\project_2\project_2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu.elf_on_local.tcl'
+14:49:26 INFO  : Disconnected from the channel tcfchan#6.
+14:49:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:49:27 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017AEE2CFA' is selected.
+14:49:27 INFO  : 'jtag frequency' command is executed.
+14:49:27 INFO  : Sourcing of 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:49:27 INFO  : Context for 'APU' is selected.
+14:49:28 INFO  : System reset is completed.
+14:49:31 INFO  : 'after 3000' command is executed.
+14:49:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1' command is executed.
+14:49:33 INFO  : FPGA configured successfully with bitstream "C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:49:33 INFO  : Context for 'APU' is selected.
+14:49:34 INFO  : Hardware design information is loaded from 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+14:49:34 INFO  : 'configparams force-mem-access 1' command is executed.
+14:49:34 INFO  : Context for 'APU' is selected.
+14:49:35 INFO  : 'ps7_init' command is executed.
+14:49:35 INFO  : 'ps7_post_config' command is executed.
+14:49:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:49:35 INFO  : The application 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:49:35 INFO  : 'configparams force-mem-access 0' command is executed.
+14:49:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1
+fpga -file C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+loadhw -hw C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+dow C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:49:35 INFO  : Memory regions updated for context APU
+14:49:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:49:35 INFO  : 'con' command is executed.
+14:49:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+con
+----------------End of Script----------------
+
+14:49:35 INFO  : Launch script is exported to file 'C:\Users\julia\Documents\1195\project_2\project_2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu.elf_on_local.tcl'
+14:50:40 INFO  : Disconnected from the channel tcfchan#7.
+14:50:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:50:41 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017AEE2CFA' is selected.
+14:50:41 INFO  : 'jtag frequency' command is executed.
+14:50:41 INFO  : Sourcing of 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:50:41 INFO  : Context for 'APU' is selected.
+14:50:42 INFO  : System reset is completed.
+14:50:45 INFO  : 'after 3000' command is executed.
+14:50:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1' command is executed.
+14:50:47 INFO  : FPGA configured successfully with bitstream "C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:50:47 INFO  : Context for 'APU' is selected.
+14:50:48 INFO  : Hardware design information is loaded from 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+14:50:48 INFO  : 'configparams force-mem-access 1' command is executed.
+14:50:48 INFO  : Context for 'APU' is selected.
+14:50:48 INFO  : 'ps7_init' command is executed.
+14:50:48 INFO  : 'ps7_post_config' command is executed.
+14:50:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:50:49 INFO  : The application 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:50:49 INFO  : 'configparams force-mem-access 0' command is executed.
+14:50:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1
+fpga -file C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+loadhw -hw C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+dow C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:50:49 INFO  : Memory regions updated for context APU
+14:50:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:50:49 INFO  : 'con' command is executed.
+14:50:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+con
+----------------End of Script----------------
+
+14:50:49 INFO  : Launch script is exported to file 'C:\Users\julia\Documents\1195\project_2\project_2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu.elf_on_local.tcl'
+15:46:02 INFO  : Disconnected from the channel tcfchan#8.
+15:46:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:46:03 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017AEE2CFA' is selected.
+15:46:03 INFO  : 'jtag frequency' command is executed.
+15:46:03 INFO  : Sourcing of 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:46:03 INFO  : Context for 'APU' is selected.
+15:46:03 INFO  : System reset is completed.
+15:46:06 INFO  : 'after 3000' command is executed.
+15:46:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1' command is executed.
+15:46:08 INFO  : FPGA configured successfully with bitstream "C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:46:08 INFO  : Context for 'APU' is selected.
+15:46:09 INFO  : Hardware design information is loaded from 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:46:09 INFO  : 'configparams force-mem-access 1' command is executed.
+15:46:10 INFO  : Context for 'APU' is selected.
+15:46:10 INFO  : 'ps7_init' command is executed.
+15:46:10 INFO  : 'ps7_post_config' command is executed.
+15:46:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:46:10 INFO  : The application 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:46:10 INFO  : 'configparams force-mem-access 0' command is executed.
+15:46:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1
+fpga -file C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+loadhw -hw C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+dow C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:46:10 INFO  : Memory regions updated for context APU
+15:46:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:46:10 INFO  : 'con' command is executed.
+15:46:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+con
+----------------End of Script----------------
+
+15:46:10 INFO  : Launch script is exported to file 'C:\Users\julia\Documents\1195\project_2\project_2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu.elf_on_local.tcl'
+11:26:57 INFO  : Disconnected from the channel tcfchan#9.
+11:26:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:26:58 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017AEE2CFA' is selected.
+11:26:58 INFO  : 'jtag frequency' command is executed.
+11:26:58 INFO  : Sourcing of 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:26:58 INFO  : Context for 'APU' is selected.
+11:26:58 INFO  : System reset is completed.
+11:27:01 INFO  : 'after 3000' command is executed.
+11:27:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1' command is executed.
+11:27:03 INFO  : FPGA configured successfully with bitstream "C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:27:03 INFO  : Context for 'APU' is selected.
+11:27:05 INFO  : Hardware design information is loaded from 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:27:05 INFO  : 'configparams force-mem-access 1' command is executed.
+11:27:05 INFO  : Context for 'APU' is selected.
+11:27:06 INFO  : 'ps7_init' command is executed.
+11:27:06 INFO  : 'ps7_post_config' command is executed.
+11:27:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:27:06 INFO  : The application 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:27:06 INFO  : 'configparams force-mem-access 0' command is executed.
+11:27:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1
+fpga -file C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+loadhw -hw C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+dow C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:27:06 INFO  : Memory regions updated for context APU
+11:27:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:27:06 INFO  : 'con' command is executed.
+11:27:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+con
+----------------End of Script----------------
+
+11:27:06 INFO  : Launch script is exported to file 'C:\Users\julia\Documents\1195\project_2\project_2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu.elf_on_local.tcl'
+11:46:59 INFO  : Disconnected from the channel tcfchan#10.
+11:47:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:47:00 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017AEE2CFA' is selected.
+11:47:00 INFO  : 'jtag frequency' command is executed.
+11:47:00 INFO  : Sourcing of 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:47:00 INFO  : Context for 'APU' is selected.
+11:47:00 INFO  : System reset is completed.
+11:47:03 INFO  : 'after 3000' command is executed.
+11:47:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1' command is executed.
+11:47:06 INFO  : FPGA configured successfully with bitstream "C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:47:06 INFO  : Context for 'APU' is selected.
+11:47:08 INFO  : Hardware design information is loaded from 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:47:08 INFO  : 'configparams force-mem-access 1' command is executed.
+11:47:08 INFO  : Context for 'APU' is selected.
+11:47:08 INFO  : 'ps7_init' command is executed.
+11:47:08 INFO  : 'ps7_post_config' command is executed.
+11:47:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:47:08 INFO  : The application 'C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:47:08 INFO  : 'configparams force-mem-access 0' command is executed.
+11:47:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA" && level==0} -index 1
+fpga -file C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+loadhw -hw C:/Users/julia/Documents/1195/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+dow C:/Users/julia/Documents/1195/project_2/project_2.sdk/ALU/Debug/ALU.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:47:08 INFO  : Memory regions updated for context APU
+11:47:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:47:09 INFO  : 'con' command is executed.
+11:47:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017AEE2CFA"} -index 0
+con
+----------------End of Script----------------
+
+11:47:09 INFO  : Launch script is exported to file 'C:\Users\julia\Documents\1195\project_2\project_2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu.elf_on_local.tcl'
+11:49:41 INFO  : Disconnected from the channel tcfchan#11.

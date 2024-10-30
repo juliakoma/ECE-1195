@@ -1,0 +1,881 @@
+14:04:46 **** Build of project ALU_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+
+**** Build of configuration Debug for project ALU ****
+
+Nothing to build for project ALU
+14:05:12 **** Auto Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ALU_TB.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ALU_TB.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ALU_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ALU_TB.d" -MT"src/ALU_TB.o" -o "src/ALU_TB.o" "../src/ALU_TB.c"
+'Finished building: ../src/ALU_TB.c'
+' '
+'Building target: ALU.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ALU_bsp/ps7_cortexa9_0/lib -o "ALU.elf"  ./src/ALU_TB.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../ALU_bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o): In function `_start':
+C:\Users\julia\Documents\1195\project_2\project_2.sdk\ALU_bsp\ps7_cortexa9_0\libsrc\standalone_v6_8\src/xil-crt0.S:138: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: ALU.elf] Error 1
+14:18:46 **** Auto Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ALU_TB.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ALU_TB.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ALU_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ALU_TB.d" -MT"src/ALU_TB.o" -o "src/ALU_TB.o" "../src/ALU_TB.c"
+../src/ALU_TB.c: In function 'main':
+../src/ALU_TB.c:19:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 1 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:21:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 1 failed. Expected = 0x0F0F0F0F, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:35:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 2 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:37:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 2 failed. Expected = 0xFFFFFFFF, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:51:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 3 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:53:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 3 failed. Expected = 0x00000000, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:67:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 4 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:69:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 4 failed. Expected = 0xFFFFFFFF, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+'Finished building: ../src/ALU_TB.c'
+' '
+'Building target: ALU.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ALU_bsp/ps7_cortexa9_0/lib -o "ALU.elf"  ./src/ALU_TB.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ALU.elf  |tee "ALU.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71508	   2580	  23328	  97416	  17c88	ALU.elf
+'Finished building: ALU.elf.size'
+' '
+14:22:42 **** Incremental Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:28:19 **** Auto Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ALU_TB.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ALU_TB.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ALU_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ALU_TB.d" -MT"src/ALU_TB.o" -o "src/ALU_TB.o" "../src/ALU_TB.c"
+../src/ALU_TB.c: In function 'main':
+../src/ALU_TB.c:29:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 1 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:31:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 1 failed. Expected = 0x0F0F0F0F, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:45:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 2 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:47:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 2 failed. Expected = 0xFFFFFFFF, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:61:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 3 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:63:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 3 failed. Expected = 0x00000000, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:77:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 4 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:79:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 4 failed. Expected = 0xFFFFFFFF, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+'Finished building: ../src/ALU_TB.c'
+' '
+'Building target: ALU.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ALU_bsp/ps7_cortexa9_0/lib -o "ALU.elf"  ./src/ALU_TB.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ALU.elf  |tee "ALU.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71508	   2580	  23328	  97416	  17c88	ALU.elf
+'Finished building: ALU.elf.size'
+' '
+14:28:27 **** Incremental Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:28:48 **** Auto Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ALU_TB.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ALU_TB.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ALU_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ALU_TB.d" -MT"src/ALU_TB.o" -o "src/ALU_TB.o" "../src/ALU_TB.c"
+../src/ALU_TB.c: In function 'main':
+../src/ALU_TB.c:29:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 1 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:31:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 1 failed. Expected = 0x0F0F0F0F, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:45:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 2 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:47:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 2 failed. Expected = 0xFFFFFFFF, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:61:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 3 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:63:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 3 failed. Expected = 0x00000000, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:77:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 4 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:79:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 4 failed. Expected = 0xFFFFFFFF, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+'Finished building: ../src/ALU_TB.c'
+' '
+'Building target: ALU.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ALU_bsp/ps7_cortexa9_0/lib -o "ALU.elf"  ./src/ALU_TB.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ALU.elf  |tee "ALU.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71508	   2580	  23328	  97416	  17c88	ALU.elf
+'Finished building: ALU.elf.size'
+' '
+14:28:53 **** Incremental Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:36:25 **** Auto Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ALU_TB.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ALU_TB.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ALU_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ALU_TB.d" -MT"src/ALU_TB.o" -o "src/ALU_TB.o" "../src/ALU_TB.c"
+../src/ALU_TB.c: In function 'main':
+../src/ALU_TB.c:31:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 1 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:33:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 1 failed. Expected = 0x0F0F0F0F, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:47:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 2 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:49:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 2 failed. Expected = 0xFFFFFFFF, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:63:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 3 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:65:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 3 failed. Expected = 0x00000000, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:79:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 4 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:81:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 4 failed. Expected = 0xFFFFFFFF, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:95:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 5 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:97:69: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 5 failed. Expected = 00000081, Got = 0x%08X\n", R);
+                                                                  ~~~^
+                                                                  %08lX
+../src/ALU_TB.c:111:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 6 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:113:69: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 6 failed. Expected = FFFFFF83, Got = 0x%08X\n", R);
+                                                                  ~~~^
+                                                                  %08lX
+../src/ALU_TB.c:127:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 7 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:129:69: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 7 failed. Expected = 00000081, Got = 0x%08X\n", R);
+                                                                  ~~~^
+                                                                  %08lX
+../src/ALU_TB.c:143:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 8 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:145:69: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 8 failed. Expected = FFFFFF83, Got = 0x%08X\n", R);
+                                                                  ~~~^
+                                                                  %08lX
+'Finished building: ../src/ALU_TB.c'
+' '
+'Building target: ALU.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ALU_bsp/ps7_cortexa9_0/lib -o "ALU.elf"  ./src/ALU_TB.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ALU.elf  |tee "ALU.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72548	   2580	  23328	  98456	  18098	ALU.elf
+'Finished building: ALU.elf.size'
+' '
+14:36:38 **** Incremental Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:37:21 **** Incremental Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:37:40 **** Incremental Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:42:31 **** Auto Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ALU_TB.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ALU_TB.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ALU_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ALU_TB.d" -MT"src/ALU_TB.o" -o "src/ALU_TB.o" "../src/ALU_TB.c"
+../src/ALU_TB.c: In function 'main':
+../src/ALU_TB.c:31:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 1 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:33:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 1 failed. Expected = 0x0F0F0F0F, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:47:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 2 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:49:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 2 failed. Expected = 0xFFFFFFFF, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:63:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 3 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:65:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 3 failed. Expected = 0x00000000, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:79:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 4 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:81:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 4 failed. Expected = 0xFFFFFFFF, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:95:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 5 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:97:69: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 5 failed. Expected = 00000081, Got = 0x%08X\n", R);
+                                                                  ~~~^
+                                                                  %08lX
+../src/ALU_TB.c:111:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 6 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:113:69: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 6 failed. Expected = FFFFFF83, Got = 0x%08X\n", R);
+                                                                  ~~~^
+                                                                  %08lX
+../src/ALU_TB.c:127:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 7 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:129:69: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 7 failed. Expected = 00000081, Got = 0x%08X\n", R);
+                                                                  ~~~^
+                                                                  %08lX
+../src/ALU_TB.c:143:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 8 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:145:69: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 8 failed. Expected = FFFFFF83, Got = 0x%08X\n", R);
+                                                                  ~~~^
+                                                                  %08lX
+../src/ALU_TB.c:159:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 9 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:161:69: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 9 failed. Expected = DB975300, Got = 0x%08X\n", R);
+                                                                  ~~~^
+                                                                  %08lX
+../src/ALU_TB.c:175:53: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 10 success. Result = 0x%08X\n", R);
+                                                  ~~~^
+                                                  %08lX
+../src/ALU_TB.c:177:70: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 10 failed. Expected = FEDCBA98, Got = 0x%08X\n", R);
+                                                                   ~~~^
+                                                                   %08lX
+../src/ALU_TB.c:191:53: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 11 success. Result = 0x%08X\n", R);
+                                                  ~~~^
+                                                  %08lX
+../src/ALU_TB.c:193:70: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 11 failed. Expected = FFB72EA6, Got = 0x%08X\n", R);
+                                                                   ~~~^
+                                                                   %08lX
+'Finished building: ../src/ALU_TB.c'
+' '
+'Building target: ALU.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ALU_bsp/ps7_cortexa9_0/lib -o "ALU.elf"  ./src/ALU_TB.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ALU.elf  |tee "ALU.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  73404	   2580	  23328	  99312	  183f0	ALU.elf
+'Finished building: ALU.elf.size'
+' '
+14:42:38 **** Incremental Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:49:16 **** Auto Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ALU_TB.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ALU_TB.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ALU_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ALU_TB.d" -MT"src/ALU_TB.o" -o "src/ALU_TB.o" "../src/ALU_TB.c"
+../src/ALU_TB.c: In function 'main':
+../src/ALU_TB.c:31:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 1 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:33:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 1 failed. Expected = 0x0F0F0F0F, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:47:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 2 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:49:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 2 failed. Expected = 0xFFFFFFFF, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:63:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 3 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:65:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 3 failed. Expected = 0x00000000, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:79:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 4 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:81:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 4 failed. Expected = 0xFFFFFFFF, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:95:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 5 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:97:69: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 5 failed. Expected = 00000081, Got = 0x%08X\n", R);
+                                                                  ~~~^
+                                                                  %08lX
+../src/ALU_TB.c:111:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 6 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:113:69: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 6 failed. Expected = FFFFFF83, Got = 0x%08X\n", R);
+                                                                  ~~~^
+                                                                  %08lX
+../src/ALU_TB.c:127:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 7 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:129:69: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 7 failed. Expected = 00000081, Got = 0x%08X\n", R);
+                                                                  ~~~^
+                                                                  %08lX
+../src/ALU_TB.c:143:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 8 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:145:69: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 8 failed. Expected = FFFFFF83, Got = 0x%08X\n", R);
+                                                                  ~~~^
+                                                                  %08lX
+../src/ALU_TB.c:159:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 9 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:161:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 9 failed. Expected = 0xFEDCBA98, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:174:53: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 10 success. Result = 0x%08X\n", R);
+                                                  ~~~^
+                                                  %08lX
+../src/ALU_TB.c:176:70: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 10 failed. Expected = FEDCBA98, Got = 0x%08X\n", R);
+                                                                   ~~~^
+                                                                   %08lX
+../src/ALU_TB.c:190:53: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 11 success. Result = 0x%08X\n", R);
+                                                  ~~~^
+                                                  %08lX
+../src/ALU_TB.c:192:70: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 11 failed. Expected = FFB72EA6, Got = 0x%08X\n", R);
+                                                                   ~~~^
+                                                                   %08lX
+'Finished building: ../src/ALU_TB.c'
+' '
+'Building target: ALU.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ALU_bsp/ps7_cortexa9_0/lib -o "ALU.elf"  ./src/ALU_TB.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ALU.elf  |tee "ALU.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  73404	   2580	  23328	  99312	  183f0	ALU.elf
+'Finished building: ALU.elf.size'
+' '
+14:49:24 **** Incremental Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:50:30 **** Auto Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ALU_TB.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ALU_TB.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ALU_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ALU_TB.d" -MT"src/ALU_TB.o" -o "src/ALU_TB.o" "../src/ALU_TB.c"
+../src/ALU_TB.c: In function 'main':
+../src/ALU_TB.c:31:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 1 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:33:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 1 failed. Expected = 0x0F0F0F0F, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:47:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 2 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:49:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 2 failed. Expected = 0xFFFFFFFF, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:63:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 3 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:65:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 3 failed. Expected = 0x00000000, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:79:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 4 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:81:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 4 failed. Expected = 0xFFFFFFFF, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:95:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 5 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:97:69: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 5 failed. Expected = 00000081, Got = 0x%08X\n", R);
+                                                                  ~~~^
+                                                                  %08lX
+../src/ALU_TB.c:111:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 6 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:113:69: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 6 failed. Expected = FFFFFF83, Got = 0x%08X\n", R);
+                                                                  ~~~^
+                                                                  %08lX
+../src/ALU_TB.c:127:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 7 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:129:69: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 7 failed. Expected = 00000081, Got = 0x%08X\n", R);
+                                                                  ~~~^
+                                                                  %08lX
+../src/ALU_TB.c:143:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 8 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:145:69: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 8 failed. Expected = FFFFFF83, Got = 0x%08X\n", R);
+                                                                  ~~~^
+                                                                  %08lX
+../src/ALU_TB.c:159:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 9 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:161:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 9 failed. Expected = 0xFEDCBA98, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:174:53: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 10 success. Result = 0x%08X\n", R);
+                                                  ~~~^
+                                                  %08lX
+../src/ALU_TB.c:176:70: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 10 failed. Expected = FEDCBA98, Got = 0x%08X\n", R);
+                                                                   ~~~^
+                                                                   %08lX
+../src/ALU_TB.c:190:53: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 11 success. Result = 0x%08X\n", R);
+                                                  ~~~^
+                                                  %08lX
+../src/ALU_TB.c:192:70: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 11 failed. Expected = FEDCBA98, Got = 0x%08X\n", R);
+                                                                   ~~~^
+                                                                   %08lX
+'Finished building: ../src/ALU_TB.c'
+' '
+'Building target: ALU.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ALU_bsp/ps7_cortexa9_0/lib -o "ALU.elf"  ./src/ALU_TB.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ALU.elf  |tee "ALU.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  73404	   2580	  23328	  99312	  183f0	ALU.elf
+'Finished building: ALU.elf.size'
+' '
+14:50:38 **** Incremental Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:44:22 **** Incremental Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:45:35 **** Auto Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ALU_TB.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ALU_TB.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ALU_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ALU_TB.d" -MT"src/ALU_TB.o" -o "src/ALU_TB.o" "../src/ALU_TB.c"
+../src/ALU_TB.c: In function 'main':
+../src/ALU_TB.c:33:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 1 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:35:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 1 failed. Expected = 0x0F0F0F0F, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:49:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 2 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:51:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 2 failed. Expected = 0xFFFFFFFF, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:65:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 3 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:67:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 3 failed. Expected = 0x00000000, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:81:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 4 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:83:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 4 failed. Expected = 0xFFFFFFFF, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:97:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 5 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:99:69: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 5 failed. Expected = 00000081, Got = 0x%08X\n", R);
+                                                                  ~~~^
+                                                                  %08lX
+../src/ALU_TB.c:113:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 6 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:115:69: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 6 failed. Expected = FFFFFF83, Got = 0x%08X\n", R);
+                                                                  ~~~^
+                                                                  %08lX
+../src/ALU_TB.c:129:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 7 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:131:69: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 7 failed. Expected = 00000081, Got = 0x%08X\n", R);
+                                                                  ~~~^
+                                                                  %08lX
+../src/ALU_TB.c:145:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 8 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:147:69: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 8 failed. Expected = FFFFFF83, Got = 0x%08X\n", R);
+                                                                  ~~~^
+                                                                  %08lX
+../src/ALU_TB.c:161:52: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 9 success. Result = 0x%08X\n", R);
+                                                 ~~~^
+                                                 %08lX
+../src/ALU_TB.c:163:71: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 9 failed. Expected = 0xFEDCBA98, Got = 0x%08X\n", R);
+                                                                    ~~~^
+                                                                    %08lX
+../src/ALU_TB.c:176:53: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 10 success. Result = 0x%08X\n", R);
+                                                  ~~~^
+                                                  %08lX
+../src/ALU_TB.c:178:70: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 10 failed. Expected = FEDCBA98, Got = 0x%08X\n", R);
+                                                                   ~~~^
+                                                                   %08lX
+../src/ALU_TB.c:192:53: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 11 success. Result = 0x%08X\n", R);
+                                                  ~~~^
+                                                  %08lX
+../src/ALU_TB.c:194:70: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 11 failed. Expected = FEDCBA98, Got = 0x%08X\n", R);
+                                                                   ~~~^
+                                                                   %08lX
+../src/ALU_TB.c:208:53: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 12 success. Result = 0x%08X\n", R);
+                                                  ~~~^
+                                                  %08lX
+../src/ALU_TB.c:210:70: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 12 failed. Expected = 00000001, Got = 0x%08X\n", R);
+                                                                   ~~~^
+                                                                   %08lX
+../src/ALU_TB.c:224:53: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 13 success. Result = 0x%08X\n", R);
+                                                  ~~~^
+                                                  %08lX
+../src/ALU_TB.c:226:70: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Test case 13 failed. Expected = 00000001, Got = 0x%08X\n", R);
+                                                                   ~~~^
+                                                                   %08lX
+'Finished building: ../src/ALU_TB.c'
+' '
+'Building target: ALU.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ALU_bsp/ps7_cortexa9_0/lib -o "ALU.elf"  ./src/ALU_TB.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ALU.elf  |tee "ALU.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  73868	   2580	  23328	  99776	  185c0	ALU.elf
+'Finished building: ALU.elf.size'
+' '
+15:46:00 **** Incremental Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:26:54 **** Incremental Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:46:57 **** Incremental Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

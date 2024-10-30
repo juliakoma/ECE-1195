@@ -1,0 +1,86 @@
+#include <stdio.h>
+#include <stdint.h>
+#include <unistd.h>
+
+#define ALU_AND 0b0000
+#define ALU_OR  0b0001
+#define ALU_XOR 0b0010
+#define ALU_NOR 0b0011
+#define ALU_ADD 0b0100
+#define ALU_SUB 0b0110
+#define ALU_SLL 0b1100
+#define ALU_SRL 0b1110
+#define ALU_SRA 0b1111
+
+int main(void) {
+    uint32_t *regmap = (uint32_t *) 0x70000000; // Base address of axi_regmap
+
+    // Test Case 1: AND
+    printf("\n\nTest Case 1: AND\n\n");
+    regmap[0] = 0xFFFFFFFF; // A
+    regmap[1] = 0x0F0F0F0F; // B
+    regmap[3] = ALU_AND;     // ALUOp for AND
+
+    usleep(10000); // Wait for the operation to complete
+
+    uint32_t R = regmap[0]; // Read result from REG0_IN (R)
+
+    if (R == 0x0F0F0F0F) {
+        printf("Test case 1 success. Result = 0x%08X\n", R);
+    } else {
+        printf("Test case 1 failed. Expected = 0x0F0F0F0F, Got = 0x%08X\n", R);
+    }
+
+    // Test Case 2: OR
+    printf("\n\nTest Case 2: OR\n\n");
+    regmap[0] = 0xF0F0F0F0; // A
+    regmap[1] = 0x0F0F0F0F; // B
+    regmap[3] = ALU_OR;     // ALUOp for OR
+
+    usleep(10000); // Wait for the operation to complete
+
+    R = regmap[0]; // Read result from REG0_IN (R)
+
+    if (R == 0xFFFFFFFF) {
+        printf("Test case 2 success. Result = 0x%08X\n", R);
+    } else {
+        printf("Test case 2 failed. Expected = 0xFFFFFFFF, Got = 0x%08X\n", R);
+    }
+
+    // Test Case 3: NOR
+    printf("\n\nTest Case 3: NOR\n\n");
+    regmap[0] = 0xF0F0F0F0; // A
+    regmap[1] = 0x0F0F0F0F; // B
+    regmap[3] = ALU_XOR;     // ALUOp for NOR
+
+    usleep(10000); // Wait for the operation to complete
+
+    R = regmap[0]; // Read result from REG0_IN (R)
+
+    if (R == 0x00000000) {
+        printf("Test case 3 success. Result = 0x%08X\n", R);
+    } else {
+        printf("Test case 3 failed. Expected = 0x00000000, Got = 0x%08X\n", R);
+    }
+
+    // Test Case 4: XOR
+    printf("\n\nTest Case 4: XOR\n\n");
+    regmap[0] = 0xAAAAAAAA; // A
+    regmap[1] = 0x55555555; // B
+    regmap[3] = ALU_NOR;     // ALUOp for XOR
+
+    usleep(10000); // Wait for the operation to complete
+
+    R = regmap[0]; // Read result from REG0_IN (R)
+
+    if (R == 0xFFFFFFFF) {
+        printf("Test case 4 success. Result = 0x%08X\n", R);
+    } else {
+        printf("Test case 4 failed. Expected = 0xFFFFFFFF, Got = 0x%08X\n", R);
+    }
+
+    // Additional test cases can follow the same pattern...
+
+    // Finally, to avoid leaving the program immediately
+    return 0;
+}

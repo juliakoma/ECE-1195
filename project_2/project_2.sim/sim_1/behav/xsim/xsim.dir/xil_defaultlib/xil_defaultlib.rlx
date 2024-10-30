@@ -1,0 +1,14 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/julia/Documents/1195/project_2/project_2.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,axi_vip_v1_1_4;processing_system7_vip_v1_0_6;xilinx_vip,,,,,,
+C:/Users/julia/Documents/1195/project_2/project_2.srcs/sim_1/new/comparator_TB.vhd,1727210837,vhdl,,,,comparator_tb,,,,,,,,
+C:/Users/julia/Documents/1195/project_2/project_2.srcs/sim_1/new/full_ALU_TB.vhd,1727286909,vhdl,,,,alu_tb,,,,,,,,
+C:/Users/julia/Documents/1195/project_2/project_2.srcs/sim_1/new/logic_unit_TB.vhd,1727209593,vhdl,,,,tb_logic_unit,,,,,,,,
+C:/Users/julia/Documents/1195/project_2/project_2.srcs/sim_1/new/shifter_TB.vhd,1727365182,vhdl,,,,shifter_tb,,,,,,,,
+C:/Users/julia/Documents/1195/project_2/project_2.srcs/sources_1/imports/src/Arith_Unit.vhd,1727129927,vhdl,,,,arith_unit,,,,,,,,
+C:/Users/julia/Documents/1195/project_2/project_2.srcs/sources_1/new/ALU.vhd,1727226901,vhdl,,,,alu,,,,,,,,
+C:/Users/julia/Documents/1195/project_2/project_2.srcs/sources_1/new/comparator_unit.vhd,1727193344,vhdl,,,,comparator_unit,,,,,,,,
+C:/Users/julia/Documents/1195/project_2/project_2.srcs/sources_1/new/logic_unit.vhd,1727209421,vhdl,,,,logic_unit,,,,,,,,
+C:/Users/julia/Documents/1195/project_2/project_2.srcs/sources_1/new/shifter_unit.vhd,1727365263,vhdl,,,,shifter_unit,,,,,,,,
